@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanjay Ram R - DevOps Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .section-heading {
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 0.5rem;
+            margin-bottom: 2rem;
+        }
+        .card {
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        .flow-step {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            position: relative;
+            flex: 1;
+            min-width: 100px;
+        }
+        .flow-step:not(:last-child)::after {
+            content: '→';
+            position: absolute;
+            right: -20px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 2rem;
+            color: #4a90e2;
+        }
+         @media (max-width: 768px) {
+            .flow-step:not(:last-child)::after {
+                content: '↓';
+                right: 50%;
+                top: auto;
+                bottom: -30px;
+                transform: translateX(50%);
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <div class="max-w-7xl mx-auto p-4 sm:p-6 lg:p-8">
+
+        <header class="text-center py-12 flex flex-col items-center">
+            <img class="rounded-full w-32 h-32 mb-6 ring-4 ring-teal-600 object-cover" src="uploaded:IMG_20130929_080727.jpg" alt="Sanjay Ram R profile picture">
+            <h1 class="text-5xl md:text-6xl font-extrabold text-gray-900">Sanjay Ram R</h1>
+            <p class="mt-4 text-xl md:text-2xl font-light text-teal-600">DevOps Engineer | Cloud & Automation Specialist</p>
+            <p class="max-w-3xl mx-auto mt-6 text-lg text-gray-600">
+                Results-driven DevOps Engineer with 3+ years of experience in both Azure DevOps and on-premises DevOps environments. Skilled in automating, deploying, and managing cloud-based and on-prem infrastructure, ensuring high availability, security, and efficiency. Expertise in CI/CD pipelines, infrastructure as code (IaC), and container orchestration.
+            </p>
+        </header>
+
+        <main>
+            <section id="work-experience" class="bg-white rounded-xl shadow-lg p-6 md:p-8 mb-12 card">
+                <h2 class="text-3xl font-bold text-center mb-6 text-gray-900 section-heading">Work Experience</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="font-bold text-2xl text-teal-600">DevOps Engineer</h3>
+                        <p class="text-gray-500">KGISL | 12/2021 - Present</p>
+                    </div>
+                    <div>
+                        <ul class="list-disc list-inside space-y-2 text-gray-600">
+                            <li>Designed and implemented CI/CD pipelines using Azure DevOps and Jenkins for cloud and on-premises applications.</li>
+                            <li>Managed Azure Kubernetes Service (AKS) and on-prem Kubernetes clusters for containerized applications.</li>
+                            <li>Created and maintained infrastructure as code using Terraform, ARM templates, and Ansible for seamless provisioning.</li>
+                            <li>Implemented monitoring solutions with Azure Monitor, Log Analytics, Application Insights, Prometheus, and Grafana.</li>
+                            <li>Secured cloud and on-premises environments using IAM policies, Azure Firewall, Key Vault, and network security controls.</li>
+                            <li>Configured and optimized Ingress controllers and load balancers to ensure secure, efficient, and scalable traffic routing.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="skills" class="bg-white rounded-xl shadow-lg p-6 md:p-8 mb-12 card">
+                <h2 class="text-3xl font-bold text-center mb-6 text-gray-900 section-heading">Skills & Technologies</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-center">
+                    <div class="p-4 bg-gray-100 rounded-lg">
+                        <h3 class="font-semibold text-lg text-gray-900 mb-1">Cloud Platforms</h3>
+                        <p class="text-gray-600">Microsoft Azure (Azure Virtual Machines, AKS, Azure Functions, Azure Storage, Azure DevOps, Azure AD)</p>
+                    </div>
+                    <div class="p-4 bg-gray-100 rounded-lg">
+                        <h3 class="font-semibold text-lg text-gray-900 mb-1">CI/CD Tools</h3>
+                        <p class="text-gray-600">Azure DevOps Pipelines, Jenkins, GitHub, GitLab CI/CD</p>
+                    </div>
+                    <div class="p-4 bg-gray-100 rounded-lg">
+                        <h3 class="font-semibold text-lg text-gray-900 mb-1">On-Premises Tools</h3>
+                        <p class="text-gray-600">Jenkins, GitLab CI/CD, Nexus, JFrog Artifactory, SonarQube</p>
+                    </div>
+                    <div class="p-4 bg-gray-100 rounded-lg">
+                        <h3 class="font-semibold text-lg text-gray-900 mb-1">Containerization & Orchestration</h3>
+                        <p class="text-gray-600">Docker, Kubernetes (AKS & On-Prem)</p>
+                    </div>
+                    <div class="p-4 bg-gray-100 rounded-lg">
+                        <h3 class="font-semibold text-lg text-gray-900 mb-1">Infrastructure as Code</h3>
+                        <p class="text-gray-600">Terraform, ARM Templates</p>
+                    </div>
+                    <div class="p-4 bg-gray-100 rounded-lg">
+                        <h3 class="font-semibold text-lg text-gray-900 mb-1">Monitoring & Logging</h3>
+                        <p class="text-gray-600">Azure Monitor, Log Analytics, App Insights, Prometheus, Grafana</p>
+                    </div>
+                     <div class="p-4 bg-gray-100 rounded-lg">
+                        <h3 class="font-semibold text-lg text-gray-900 mb-1">Version Control</h3>
+                        <p class="text-gray-600">Git, GitHub, Azure Repos</p>
+                    </div>
+                     <div class="p-4 bg-gray-100 rounded-lg">
+                        <h3 class="font-semibold text-lg text-gray-900 mb-1">Scripting & Automation</h3>
+                        <p class="text-gray-600">PowerShell, Bash</p>
+                    </div>
+                     <div class="p-4 bg-gray-100 rounded-lg">
+                        <h3 class="font-semibold text-lg text-gray-900 mb-1">Networking & Security</h3>
+                        <p class="text-gray-600">Azure Virtual Network, VPN Gateway, IAM, Azure Firewall, Key Vault</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="projects" class="mb-12">
+                <h2 class="text-3xl font-bold text-center mb-8 text-gray-900 section-heading">Project Spotlights</h2>
+                
+                <h3 class="text-2xl font-bold text-center text-teal-600 mb-6">Azure-Based Projects</h3>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+                    <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col card">
+                        <h4 class="text-xl font-bold text-teal-600 mb-3">Azure Infrastructure Automation</h4>
+                        <p class="text-gray-600 mb-4 flex-grow" data-description="Implemented Terraform and ARM templates to provision and manage Azure resources, reducing deployment time and ensuring consistency.">Implemented Terraform and ARM templates to provision and manage Azure resources, reducing deployment time and ensuring consistency.</p>
+                        <button onclick="expandProjectDescription(this)" class="mt-2 py-2 px-4 rounded-full text-white bg-teal-500 hover:bg-teal-600 transition-colors self-end">✨ Expand</button>
+                        <div class="mt-auto">
+                            <h5 class="font-semibold text-gray-900 mb-3">Technologies Used:</h5>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-gray-200 text-gray-800 text-xs font-medium px-2.5 py-1 rounded-full">Terraform</span>
+                                <span class="bg-gray-200 text-gray-800 text-xs font-medium px-2.5 py-1 rounded-full">ARM Templates</span>
+                                <span class="bg-gray-200 text-gray-800 text-xs font-medium px-2.5 py-1 rounded-full">Azure</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col card">
+                        <h4 class="text-xl font-bold text-teal-600 mb-3">CI/CD Pipeline in Azure DevOps</h4>
+                        <p class="text-gray-600 mb-4 flex-grow" data-description="Designed and deployed end-to-end CI/CD pipelines using Azure DevOps for application deployment in AKS and Azure Virtual Machines.">Designed and deployed end-to-end CI/CD pipelines using Azure DevOps for application deployment in AKS and Azure Virtual Machines.</p>
+                        <button onclick="expandProjectDescription(this)" class="mt-2 py-2 px-4 rounded-full text-white bg-teal-500 hover:bg-teal-600 transition-colors self-end">✨ Expand</button>
+                        <div class="mt-auto">
+                            <h5 class="font-semibold text-gray-900 mb-3">Technologies Used:</h5>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-gray-200 text-gray-800 text-xs font-medium px-2.5 py-1 rounded-full">Azure DevOps Pipelines</span>
+                                <span class="bg-gray-200 text-gray-800 text-xs font-medium px-2.5 py-1 rounded-full">AKS</span>
+                                <span class="bg-gray-200 text-gray-800 text-xs font-medium px-2.5 py-1 rounded-full">Azure Virtual Machines</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col card">
+                        <h4 class="text-xl font-bold text-teal-600 mb-3">Helm-Based Application Deployment</h4>
+                        <p class="text-gray-600 mb-4 flex-grow" data-description="Deployed and managed Kubernetes applications using Helm charts, simplifying release management and version control in AKS.">Deployed and managed Kubernetes applications using Helm charts, simplifying release management and version control in AKS.</p>
+                        <button onclick="expandProjectDescription(this)" class="mt-2 py-2 px-4 rounded-full text-white bg-teal-500 hover:bg-teal-600 transition-colors self-end">✨ Expand</button>
+                        <div class="mt-auto">
+                            <h5 class="font-semibold text-gray-900 mb-3">Technologies Used:</h5>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-gray-200 text-gray-800 text-xs font-medium px-2.5 py-1 rounded-full">Helm</span>
+                                <span class="bg-gray-200 text-gray-800 text-xs font-medium px-2.5 py-1 rounded-full">Kubernetes (AKS)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="text-2xl font-bold text-center text-teal-600 mb-6">On-Premises Projects</h3>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col card">
+                        <h4 class="text-xl font-bold text-teal-600 mb-3">CI/CD Pipeline for On-Prem Applications</h4>
+                        <p class="text-gray-600 mb-4 flex-grow" data-description="Developed Jenkins-based CI/CD pipelines for automating build and deployment in on-prem environments.">Developed Jenkins-based CI/CD pipelines for automating build and deployment in on-prem environments.</p>
+                        <button onclick="expandProjectDescription(this)" class="mt-2 py-2 px-4 rounded-full text-white bg-teal-500 hover:bg-teal-600 transition-colors self-end">✨ Expand</button>
+                        <div class="mt-auto">
+                            <h5 class="font-semibold text-gray-900 mb-3">Technologies Used:</h5>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-gray-200 text-gray-800 text-xs font-medium px-2.5 py-1 rounded-full">Jenkins</span>
+                                <span class="bg-gray-200 text-gray-800 text-xs font-medium px-2.5 py-1 rounded-full">GitLab CI/CD</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col card">
+                        <h4 class="text-xl font-bold text-teal-600 mb-3">Dockerized Build Process</h4>
+                        <p class="text-gray-600 mb-4 flex-grow" data-description="Migrated the traditional build process to a Dockerized approach, reducing build times, improving consistency, and eliminating dependency-related issues.">Migrated the traditional build process to a Dockerized approach, reducing build times, improving consistency, and eliminating dependency-related issues.</p>
+                        <button onclick="expandProjectDescription(this)" class="mt-2 py-2 px-4 rounded-full text-white bg-teal-500 hover:bg-teal-600 transition-colors self-end">✨ Expand</button>
+                        <div class="mt-auto">
+                            <h5 class="font-semibold text-gray-900 mb-3">Technologies Used:</h5>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-gray-200 text-gray-800 text-xs font-medium px-2.5 py-1 rounded-full">Docker</span>
+                                <span class="bg-gray-200 text-gray-800 text-xs font-medium px-2.5 py-1 rounded-full">Jenkins</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="certs-education" class="bg-white rounded-xl shadow-lg p-6 md:p-8 mb-12 card">
+                <h2 class="text-3xl font-bold text-center mb-6 text-gray-900 section-heading">Certifications & Education</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="p-4 bg-gray-100 rounded-lg">
+                        <h3 class="font-semibold text-lg text-gray-900 mb-1">Certifications</h3>
+                        <ul class="list-disc list-inside space-y-1 text-gray-600">
+                            <li>Azure Fundamentals (AZ-900)</li>
+                            <li>Kubernetes Course Completion</li>
+                        </ul>
+                    </div>
+                    <div class="p-4 bg-gray-100 rounded-lg">
+                        <h3 class="font-semibold text-lg text-gray-900 mb-1">Education</h3>
+                        <p class="text-gray-600">Bachelor of Computer Science</p>
+                        <p class="text-gray-500 text-sm">KCG College of Technology | Aug 2017 - Jul 2021</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="interview-prep" class="bg-white rounded-xl shadow-lg p-6 md:p-8 mb-12 card">
+                <h2 class="text-3xl font-bold text-center mb-6 text-gray-900 section-heading">Interview Preparation</h2>
+                <p class="text-center text-gray-600 mb-6">Click the button below to get interview questions tailored to your profile.</p>
+                <div class="flex justify-center">
+                    <button onclick="generateInterviewQuestions()" id="interview-button" class="py-3 px-6 rounded-full text-white bg-teal-600 hover:bg-teal-700 transition-colors font-bold text-lg">
+                        ✨ Generate Interview Questions
+                    </button>
+                </div>
+                <div id="interview-questions-loading" class="mt-6 text-center text-teal-600 hidden">
+                    Generating questions, please wait...
+                </div>
+                <div id="interview-questions-result" class="mt-8 hidden">
+                    <h3 class="text-2xl font-bold text-teal-600 mb-4">Your Practice Questions:</h3>
+                    <ul id="questions-list" class="list-disc list-inside space-y-3 text-gray-600"></ul>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="text-center py-10 mt-8 border-t border-gray-300">
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">Let's Connect</h2>
+            <div class="flex justify-center items-center space-x-6">
+                <a href="mailto:Sanjayramr904@gmail.com" class="text-teal-600 hover:text-gray-900 transition-colors">Sanjayramr904@gmail.com</a>
+                <a href="https://linkedin.com/in/sanjay-ram-0a927218a" target="_blank" class="text-teal-600 hover:text-gray-900 transition-colors">LinkedIn</a>
+                <a href="https://github.com/Sanjay-Ram" target="_blank" class="text-teal-600 hover:text-gray-900 transition-colors">GitHub</a>
+            </div>
+            <p class="mt-4 text-gray-500 text-sm">9080720439</p>
+        </footer>
+    </div>
+
+    <script>
+        const API_KEY = ""; 
+        const API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=" + API_KEY;
+
+        async function expandProjectDescription(button) {
+            const projectDescription = button.previousElementSibling;
+            const originalText = projectDescription.dataset.description;
+            const originalButtonText = button.innerHTML;
+            
+            button.innerHTML = '...';
+            button.disabled = true;
+
+            const prompt = `Expand the following short project description into a detailed, one-paragraph explanation suitable for a professional portfolio. Make sure to highlight the key technologies and outcomes. Short description: "${originalText}"`;
+
+            try {
+                const response = await fetch(API_URL, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        contents: [{ parts: [{ text: prompt }] }],
+                    })
+                });
+                
+                if (!response.ok) {
+                    throw new Error('API call failed with status: ' + response.status);
+                }
+
+                const result = await response.json();
+                const expandedText = result.candidates?.[0]?.content?.parts?.[0]?.text;
+                
+                if (expandedText) {
+                    projectDescription.textContent = expandedText;
+                    button.style.display = 'none'; // Hide the expand button after use
+                } else {
+                    console.error("No text found in API response.");
+                    projectDescription.textContent = "Could not expand. Please try again later.";
+                }
+
+            } catch (error) {
+                console.error("Error expanding project description:", error);
+                projectDescription.textContent = "Error expanding project description. Please try again.";
+            } finally {
+                button.innerHTML = originalButtonText;
+                button.disabled = false;
+            }
+        }
+
+        async function generateInterviewQuestions() {
+            const button = document.getElementById('interview-button');
+            const loading = document.getElementById('interview-questions-loading');
+            const resultDiv = document.getElementById('interview-questions-result');
+            const questionsList = document.getElementById('questions-list');
+            
+            button.disabled = true;
+            loading.classList.remove('hidden');
+            resultDiv.classList.add('hidden');
+            questionsList.innerHTML = '';
+
+            const resumeContent = document.body.innerText;
+            const prompt = `Act as a senior DevOps hiring manager. Based on the following resume content, generate 3 to 5 realistic and challenging interview questions for a mid-level DevOps Engineer role. The questions should relate to the candidate's skills and project experience. Resume content: \n\n${resumeContent}`;
+
+            try {
+                const response = await fetch(API_URL, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        contents: [{ parts: [{ text: prompt }] }],
+                    })
+                });
+
+                if (!response.ok) {
+                    throw new Error('API call failed with status: ' + response.status);
+                }
+
+                const result = await response.json();
+                const questionsText = result.candidates?.[0]?.content?.parts?.[0]?.text;
+
+                if (questionsText) {
+                    const questionsArray = questionsText.split('\n').filter(q => q.trim() !== '');
+                    questionsArray.forEach(q => {
+                        const li = document.createElement('li');
+                        li.textContent = q.replace(/^- /, '');
+                        questionsList.appendChild(li);
+                    });
+                    resultDiv.classList.remove('hidden');
+                } else {
+                    console.error("No text found in API response.");
+                    questionsList.innerHTML = "<li>Could not generate questions. Please try again later.</li>";
+                    resultDiv.classList.remove('hidden');
+                }
+            } catch (error) {
+                console.error("Error generating interview questions:", error);
+                questionsList.innerHTML = "<li>Error generating questions. Please try again.</li>";
+                resultDiv.classList.remove('hidden');
+            } finally {
+                button.disabled = false;
+                loading.classList.add('hidden');
+            }
+        }
+    </script>
+</body>
+</html>
